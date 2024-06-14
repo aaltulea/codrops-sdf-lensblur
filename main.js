@@ -4,7 +4,7 @@ import fragmentShader from './shaders/fragment.glsl';
 
 // extract "variation" parameter from the url
 const urlParams = new URLSearchParams(window.location.search);
-const variation = urlParams.get('var') || 0;
+const variation = urlParams.get('var') || 3;
 
 // add selected class to link based on variation parameter
 document.querySelector(`[data-var="${variation}"]`).classList.add('selected');
